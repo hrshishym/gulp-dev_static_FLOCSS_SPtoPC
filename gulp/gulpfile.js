@@ -37,6 +37,7 @@ const notify = require("gulp-notify"); // エラー発生時のアラート出�
 const postcss = require("gulp-postcss"); // PostCSS利用
 const cssnext = require("postcss-cssnext"); // 最新CSS使用を先取り
 const sourcemaps = require("gulp-sourcemaps"); // ソースマップ生成
+const csscomb = require('gulp-csscomb');
 const browsers = [ // 対応ブラウザの指定
   'last 2 versions',
   '> 5%',
@@ -65,10 +66,11 @@ const cssSass = () => {
     },browsers)])) // 最新CSS使用を先取り
     .pipe(sourcemaps.write('./')) // ソースマップの出力先をcssファイルから見たパスに指定
     .pipe(dest(distPath.css)) // 
-    .pipe(notify({ // エラー発生時のアラート出力
-      message: 'Sassをコンパイルしました！',
-      onLast: true
-    }))
+    .pipe(csscomb())
+    // .pipe(notify({ // エラー発生時のアラート出力
+    //   message: 'Sassをコンパイルしました！',
+    //   onLast: true
+    // }))
 }
 
 // 画像圧縮
