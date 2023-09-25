@@ -85,6 +85,7 @@ const imgImagemin = () => {
     imageminPngquant(),
     imageminSvgo({
       plugins: [{
+        name: "preset-default",
         removeViewbox: false // viewBox属性を削除しない
       }]
     })],
