@@ -65,10 +65,10 @@ const cssSass = () => {
     },browsers)])) // 最新CSS使用を先取り
     .pipe(sourcemaps.write('./')) // ソースマップの出力先をcssファイルから見たパスに指定
     .pipe(dest(distPath.css)) // 
-    .pipe(notify({ // エラー発生時のアラート出力
-      message: 'Sassをコンパイルしました！',
-      onLast: true
-    }))
+    // .pipe(notify({ // エラー発生時のアラート出力
+    //   message: 'Sassをコンパイルしました！',
+    //   onLast: true
+    // }))
 }
 
 // 画像圧縮
