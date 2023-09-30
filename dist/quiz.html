@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>ゆうせかクイズ問題</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="robots" content="noindex,nofollow">
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="./js/common.js"></script>
+  <script defer src="./js/script.js" type="module"></script>
+</head>
+<body>
+  <h1>ゆうせかクイズ</h1>
+  <hr>
+  <h2 class="question__num">問題</h2>
+  <!-- 問題 ------------------------------>
+  <div class="question">
+    <div class="image">
+      <img src="" alt="">
+    </div>
+    <div class="text_q"></div>
+    <h3>選択肢</h3>
+    <div class="choice__area" style="position:relative;">
+      <div class="text_c">
+      </div>
+      <div class="correct" style="display:none;position:absolute;top:0;font-size:100px;color:lightgreen;opacity:.4;z-index:1;pointer-events:none;">◯</div>
+      <div class="incorrect" style="display:none;position:absolute;top:0;font-size:100px;color:pink;opacity:.4;z-index:1;pointer-events:none;">✕</div>
+    </div>
+    <a href="javascript:void(0);" style="display: none;" id="gotoAnswer">解説に進む</a>
+    <hr>
+    <!-- <a href="javascript:void(0);" onclick="init();">はじめに戻る</a> -->
+    
+  </div>
+  
+  <!-- 解答 ------------------------------>
+  <div class="answer" style="display: none;">
+    <!-- <h2>解答</h2> -->
+    <div class="text_a"></div>
+    <div class="text_d"></div>
+    <p>動画はこちら</p>
+    <div class="movie">
+      <a href="https://www.youtube.com/watch?v=a2mViyF_f1c&t=211s">
+        <img src="https://img.youtube.com/vi/a2mViyF_f1c/maxresdefault.jpg" alt="">
+      </a>
+    </div>
+    <div class="link">
+      <a href="javascript:void(0);">次の問題へ進む</a>
+    </div>
+  </div>
+
+  <!-- 結果発表 ------------------------------>
+  <div class="result" style="display: none;">
+    <div class="result_point"><span class="result_gotpoint">0</span>点 / <span class="result_totalpoint">30</span>点</div>
+    <div class="result_rank"></div>
+  </div>
+  
+  <!-- はじめに戻るボタン ------------------------------>
+  <div class="link">
+    <!-- <a href="javascript:void(0);" onclick="init();">はじめに戻る</a> -->
+    <a href="/">はじめに戻る</a>
+  </div>
+</body>
+</html>

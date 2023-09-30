@@ -76,13 +76,28 @@ const imagemin = require("gulp-imagemin"); // 画像圧縮
 const imageminMozjpeg = require("imagemin-mozjpeg"); // jpgの高圧縮に必要
 const imageminPngquant = require("imagemin-pngquant"); // pngの高圧縮に必要
 const imageminSvgo = require("imagemin-svgo");  // svgの高圧縮に必要
+const webp = require('gulp-webp');
 const imgImagemin = () => {
   return src(srcPath.img)
+  // webP を使用するときはこちら
+  .pipe(
+    webp({
+      quality: 80,
+      method: 6,
+    })
+  )
+  //// jpg, png のまま圧縮するときはこちら
+  // .pipe(imagemin([
+  //   imageminMozjpeg({
+  //     quality: 80
+  //   }),
+  //   imageminPngquant(),
+  //   {
+  //     verbose: true
+  //   }
+  //  ])
+  //// SVG圧縮
   .pipe(imagemin([
-    imageminMozjpeg({
-      quality: 80
-    }),
-    imageminPngquant(),
     imageminSvgo({
       plugins: [{
         name: "preset-default",

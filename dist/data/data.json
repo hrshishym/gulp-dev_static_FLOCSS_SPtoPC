@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "question": "ブックカバーに折り目をつけるときに大平さん（雅代お姉さん）が使うものは？",
+      "thumbnail": "img-q1-2",
+      "choices" : [
+        "かまぼこ板",
+        "定規",
+        "消しゴム",
+        "わりばし"
+      ],
+      "description": "ブックカバーに折り目をつけるときに大平さん（雅代お姉さん）が使うものは「かまぼこ板」でした。",
+      "youtube": "https://www.youtube.com/embed/a2mViyF_f1c?si=mgXu1e1lOqww2Cfb"
+    },
+    {
+      "id": 1,
+      "question": "「有隣堂しか知らない世界」第1回目で紹介されたものは？",
+      "thumbnail": "",
+      "choices" : [
+        "キムワイプ",
+        "ガラスペン",
+        "特殊紙",
+        "インク"
+      ],
+      "description": "「有隣堂しか知らない世界」第1回目で紹介されたものは「キムワイプ」でした。",
+      "youtube": "https://www.youtube.com/embed/joXAMsm9u7k?si=zBVKSSIdCtvLiWNl"
+    },
+    {
+      "id": 2,
+      "question": "「有隣堂しか知らない世界」がパクったと公言している、tvk（テレビ神奈川）の伝説のテレビ番組は？",
+      "thumbnail": "",
+      "choices": [
+        "saku saku",
+        "あっぱれ！KANAGAWA大行進",
+        "猫のひたいほどワイド",
+        "関内デビル"
+      ],
+      "description": "「有隣堂しか知らない世界」がパクったと公言している、tvk（テレビ神奈川）の伝説のテレビ番組は「saku saku」でした。",
+      "youtube": "https://www.youtube.com/embed/6nrps-gbQoo?si=JQNJEA3ADI176gSS"
+    },
+    {
+      "id": 3,
+      "question": "エピソード0。テスト版ではブッコローはミミズクの形ではなく何だった？",
+      "thumbnail": "",
+      "choices": [
+        "軍手",
+        "カタツムリ",
+        "ネコ",
+        "ガラスペン"
+      ],
+      "description": "テスト版ではブッコローはミミズクの形ではなく「軍手」でした。",
+      "youtube": "https://www.youtube.com/embed/ZLCYlxghNzs?si=PF-7H09an-tEULFw&amp;start=141"
+    },
+    {
+      "id": 4,
+      "question": "有隣堂のカラーカバーのサイズが合わない文庫は？",
+      "thumbnail": "",
+      "choices": [
+        "ハヤカワ文庫",
+        "宝島社文庫",
+        "幻冬舎文庫",
+        "角川文庫"
+      ],
+      "description": "有隣堂のカラーカバーのサイズが合わない文庫は「ハヤカワ文庫」でした。",
+      "youtube": "https://www.youtube.com/embed/ioaq4IgArjo?si=DsO17WxZYF0LjV4p&amp;start=183"
+    }
+  ]
+}
